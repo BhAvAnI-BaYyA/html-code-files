@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+#DIV1 {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid black;
+  perspective: 200px;
+}
+
+#DIV2 {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  background-color:blue;
+  translate: 50px 50px 50px;
+}
+
+#DIV2original {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px dashed grey;
+  background-color:papayawhip;
+  opacity: 0.5;
+}
+</style>
+</head>
+<body>
+
+<h3>Translate property</h3>
+<p>Moves red box 50px right, 50px down, and 50px closer to point of view, which makes it look larger. Point of view is set to 200px above translated div element with perspective property on parent element DIV1.</p>
+<div id="DIV1">DIV1
+  <div id="DIV2original">DIV2</div>
+  <div id="DIV2">DIV2</div>
+</div>
+
+</body>
+</html>
